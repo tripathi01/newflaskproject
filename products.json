@@ -2,21 +2,21 @@
   {
     "productID": 24,
     "productName": "Iphone15",
-    "price": 12000
+    "price": 120000
   },
   {
     "productID": 23,
     "productName": "Iphone16",
-    "price": 24000
+    "price": 240000
   },
   {
     "productID": 22,
     "productName": "Iphone17",
-    "price": 36000
+    "price": 360000
   },
   {
     "productID": 20,
     "productName": "Iphone18",
-    "price": 48000
+    "price": 480000
   }
 ]
