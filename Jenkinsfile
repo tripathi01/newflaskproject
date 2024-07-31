@@ -53,5 +53,13 @@ stage('Docker Build') {
 
             }
         }
+stage('Docker Push') {
+            steps {
+               withCredentials([usernamePassword(credentialsId:'dockerHub',passwordVariable: 'dockerHubPassword',usernameVariable:'dockerHubUser')]){
+                sh "docker login -u ${env.dockerHubUser} -p ${env.dockerHubPassword}"
+                sh "docker push atultripathi01/newflaskapp:latest"
+                }
+            }
+    }
 }
 }
