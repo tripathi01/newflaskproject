@@ -40,5 +40,18 @@ bat "pytest"
 }
 
 }
+stage('Docker Build') {
+            steps {
+                script{
+                if(isUnix()){
+                sh "docker build -t  atultripathi01/newflaskapp ."
+                }
+                else{
+                 bat "docker build -t atultripathi01/newflaskapp ."
+                 }
+                 }
+
+            }
+        }
 }
 }
